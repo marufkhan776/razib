@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ব্লগ - রাজিব চৌধুরী</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>ভ্রমণ</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">হোম</a></li>
+                    <li><a href="blog.html" class="nav-link active">ব্লগ</a></li>
+                    <li><a href="about.html" class="nav-link">আমার সম্পর্কে</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+
+    <!-- Blog Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-aos="fade-up">ভ্রমণ গল্প</h1>
+            <p class="page-subtitle" data-aos="fade-up" data-aos-delay="100">প্রতিটি ভ্রমণের স্মৃতি আর অভিজ্ঞতা</p>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-grid-full">
+                <!-- Blog Post 1 -->
+                <article class="blog-post" data-aos="fade-up">
+                    <div class="blog-post-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="সিলেটের চা বাগান">
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-header">
+                            <h2>সিলেটের চা বাগানে এক সকাল</h2>
+                            <div class="blog-post-meta">
+                                <span class="date">১৫ ডিসেম্বর, ২০২৩</span>
+                                <span class="location">সিলেট</span>
+                            </div>
+                        </div>
+                        <div class="blog-post-excerpt">
+                            <p>সকালের কুয়াশায় ঢাকা চা বাগানের সবুজ পাতা, পাখির কলকাকলি আর চা শ্রমিকদের গান। সিলেটের এই চা বাগানে আসার আগে কখনো ভাবিনি যে একটি সকাল এত সুন্দর হতে পারে...</p>
+                        </div>
+                        <button class="read-more-btn" onclick="openBlogModal('blog1')">সম্পূর্ণ পড়ুন</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-post" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-post-image">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="কক্সবাজারের সূর্যাস্ত">
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-header">
+                            <h2>কক্সবাজারে সূর্যাস্তের সাক্ষী</h2>
+                            <div class="blog-post-meta">
+                                <span class="date">২৮ নভেম্বর, ২০২৩</span>
+                                <span class="location">কক্সবাজার</span>
+                            </div>
+                        </div>
+                        <div class="blog-post-excerpt">
+                            <p>সমুদ্রের বুকে ডুবে যাওয়া সূর্যের লাল আভা, বালুর উপর পায়ের ছাপ আর ঢেউয়ের শব্দ। কক্সবাজারের এই সূর্যাস্ত দেখার অভিজ্ঞতা জীবনের অন্যতম সেরা মুহূর্ত...</p>
+                        </div>
+                        <button class="read-more-btn" onclick="openBlogModal('blog2')">সম্পূর্ণ পড়ুন</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-post" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-post-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="সুন্দরবনের ম্যানগ্রোভ">
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-header">
+                            <h2>সুন্দরবনের রহস্যময় জগৎ</h2>
+                            <div class="blog-post-meta">
+                                <span class="date">১০ নভেম্বর, ২০২৩</span>
+                                <span class="location">সুন্দরবন</span>
+                            </div>
+                        </div>
+                        <div class="blog-post-excerpt">
+                            <p>ম্যানগ্রোভ বনের ঘন সবুজ, বাঘের পায়ের ছাপ আর বনবিবির গল্প। সুন্দরবনের এই রহস্যময় জগতে প্রবেশ করার পর মনে হয়েছে যেন অন্য এক পৃথিবীতে চলে এসেছি...</p>
+                        </div>
+                        <button class="read-more-btn" onclick="openBlogModal('blog3')">সম্পূর্ণ পড়ুন</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-post" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-post-image">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="রাঙ্গামাটি">
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-header">
+                            <h2>রাঙ্গামাটির পাহাড়ি সৌন্দর্য</h2>
+                            <div class="blog-post-meta">
+                                <span class="date">৫ অক্টোবর, ২০২৩</span>
+                                <span class="location">রাঙ্গামাটি</span>
+                            </div>
+                        </div>
+                        <div class="blog-post-excerpt">
+                            <p>পাহাড়ের চূড়ায় দাঁড়িয়ে নিচের সবুজ উপত্যকা দেখার অনুভূতি ভাষায় প্রকাশ করা যায় না। রাঙ্গামাটির এই পাহাড়ি সৌন্দর্য দেখে মনে হয়েছে প্রকৃতির ক্যানভাসে আঁকা একটি ছবি...</p>
+                        </div>
+                        <button class="read-more-btn" onclick="openBlogModal('blog4')">সম্পূর্ণ পড়ুন</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="blog-post" data-aos="fade-up" data-aos-delay="400">
+                    <div class="blog-post-image">
+                        <img src="https://images.unsplash.com/photo-1565967511849-76a60a516170?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="বান্দরবান">
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-header">
+                            <h2>বান্দরবানের আদিবাসী জীবন</h2>
+                            <div class="blog-post-meta">
+                                <span class="date">২০ সেপ্টেম্বর, ২০২৩</span>
+                                <span class="location">বান্দরবান</span>
+                            </div>
+                        </div>
+                        <div class="blog-post-excerpt">
+                            <p>আদিবাসী সম্প্রদায়ের জীবনযাত্রা দেখার সুযোগ পেয়েছিলাম বান্দরবানে। তাদের সংস্কৃতি, ঐতিহ্য আর জীবনধারা দেখে মুগ্ধ হয়েছিলাম। প্রতিটি মুহূর্ত ছিল শিক্ষণীয়...</p>
+                        </div>
+                        <button class="read-more-btn" onclick="openBlogModal('blog5')">সম্পূর্ণ পড়ুন</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="blog-post" data-aos="fade-up" data-aos-delay="500">
+                    <div class="blog-post-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="সেন্ট মার্টিন">
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-header">
+                            <h2>সেন্ট মার্টিনের প্রবাল দ্বীপ</h2>
+                            <div class="blog-post-meta">
+                                <span class="date">১৫ আগস্ট, ২০২৩</span>
+                                <span class="location">সেন্ট মার্টিন</span>
+                            </div>
+                        </div>
+                        <div class="blog-post-excerpt">
+                            <p>প্রবাল দ্বীপ সেন্ট মার্টিনের সাদা বালুর সৈকত, নীল সমুদ্র আর প্রবালের রঙিন জগৎ। এই ছোট্ট দ্বীপে কয়েক দিন কাটানোর অভিজ্ঞতা ছিল অসাধারণ...</p>
+                        </div>
+                        <button class="read-more-btn" onclick="openBlogModal('blog6')">সম্পূর্ণ পড়ুন</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Modal -->
+    <div id="blogModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeBlogModal()">&times;</span>
+            <div id="modalContent" class="modal-body">
+                <!-- Content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>রাজিব চৌধুরী</h3>
+                    <p>"ভ্রমণ শুধু জায়গা দেখানো নয়, অনুভূতি সংগ্রহ করা"</p>
+                </div>
+                <div class="footer-section">
+                    <h4>দ্রুত লিংক</h4>
+                    <ul>
+                        <li><a href="index.html">হোম</a></li>
+                        <li><a href="blog.html">ব্লগ</a></li>
+                        <li><a href="about.html">আমার সম্পর্কে</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>সামাজিক মাধ্যম</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">ফেসবুক</a>
+                        <a href="#" class="social-link">ইনস্টাগ্রাম</a>
+                        <a href="#" class="social-link">টুইটার</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ২০২৪ রাজিব চৌধুরী। সর্বস্বত্ব সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
